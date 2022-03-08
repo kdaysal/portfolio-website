@@ -315,3 +315,7 @@ button:focus,
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+.error-message {
+  color: red;
+}

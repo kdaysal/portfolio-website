@@ -386,3 +386,7 @@ Secondary Color (light yellow/orange): #e0b354;
     -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
             animation: 34s cloud-move-reverse infinite alternate linear;
   }
+
+  .error-message {
+    color: red;
+  }
