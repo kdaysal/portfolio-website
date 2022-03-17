@@ -17,7 +17,7 @@ Secondary Color (light yellow/orange): #e0b354;
   --page-header-color: lightgreen;
   --body-color: #000;
   --anchor-color: #006a5e;
-  --a-visited-color: midnightblue;
+  --a-visited-color: rgb(32, 32, 56);
   --a-active-color: maroon;
   --button-font-color: white;
   --grid-background-color: aliceblue;
@@ -88,17 +88,17 @@ button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
-
+  
   /* takes the font from the outer container */
   font-family: inherit;
-
+  
   /* styles the button */
   background-color: var(--primary-color);
   color: var(--button-font-color);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-
+  
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition-duration: 0.3s;
@@ -111,7 +111,7 @@ button:focus,
 .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-
+  
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
@@ -145,6 +145,8 @@ button:focus,
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
+  position: relative; 
+  top: 110px;
 }
 
 .page-footer {
@@ -152,12 +154,15 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
+  position: relative;
+  top: 40px;
+  margin-bottom: 60px;
 }
 
 .page-header {
   display: flex;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   background-color: var(--page-header-color);
   border-bottom: solid 1px blue;
 }
@@ -177,16 +182,38 @@ button:focus,
   width: 33%;
 }/* end grid fallback */
 
+.contact-main {
+  max-width: 500px;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-main,
+.contact-form {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  
+  /* max-width: 50px; */
+  grid-template-columns: 1fr;
+  width: 60%;
+}
+
 @supports (display: grid) {
   .grid {
     display: grid;
-
     /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    margin: 0;
+    /* margin: 0; */
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
-
+  
   .grid__item {
     background-color: var(--grid-background-color);
     padding: 20px;
@@ -194,7 +221,7 @@ button:focus,
     min-height: auto;
     margin: 0;
   }
-
+  
   /* Note - Can delete the 'last-child' and 'project5' stylings below - or make them look totally different */
   .grid__item:last-child {
     grid-column: 3 / 3;
@@ -202,15 +229,63 @@ button:focus,
   }
 } /* end @supports */
 
+/* push header down so it doesn't overlap with profile picture */
+@media all and (max-width: 432px) {
+  /* move Hello World blurb down below profile pic and center content on screen */
+  .profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* center profile pic on smaller screens */
+  .profile__portrait {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .page-footer-home {
+    margin-top: 100px;
+  }
+  
+  .contact-info {
+    margin-top: 100px;
+  }
+}
+
+@media all and (max-width: 432px) {
+  .contact-info {
+    margin-top: 120px;
+  }
+}
+
+@media all and (min-width: 432px) and (max-width: 575px) {
+  .page-footer-home {
+    margin-top: 150px;
+  }
+  
+  .contact-info {
+    margin-top: 55px;
+  }
+}
+
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
+    margin-top: 100px;
   }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
+    margin-top: 60px;
+  }
+  
+  .contact-info {
+    margin-top: 55px;
   }
 }
 
@@ -218,18 +293,20 @@ button:focus,
   .grid {
     grid-gap: 10px;
   }
-
+  
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-
+  
   h1 {
     font-size: 22px;
   }
 }
 
 .about-me {
+  position: relative; 
+  top: 110px;
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
@@ -242,28 +319,20 @@ button:focus,
 
 #about-picture {
   max-width: 70%;
+  position: relative; 
+  top: 150px;
 }
 
 .skills-table {
+  position: relative; 
+  top: 150px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 120px;
+  
 }
 
-.contact-main {
-  max-width: 500px;
-}
 
-.contact-main,
-.contact-form {
-  display: grid;
-  text-align: center;
-  justify-content: center;
-  margin: 0 auto;
-
-  /* max-width: 50px; */
-  grid-template-columns: 1fr;
-  width: 60%;
-}
 
 /* ANIMATION!! */
 
@@ -272,11 +341,11 @@ button:focus,
   0% {
     fill: #edc655;
   }
-
+  
   50% {
     fill: #fcffad;
   }
-
+  
   100% {
     fill: #f76414;
   }
@@ -291,7 +360,7 @@ button:focus,
   from {
     transform: translate(0, 50px);
   }
-
+  
   to {
     transform: translate(200px, 50px);
   }
@@ -306,7 +375,7 @@ button:focus,
   from {
     transform: translate(446px, 48px);
   }
-
+  
   to {
     transform: translate(100px, 48px);
   }
@@ -318,4 +387,12 @@ button:focus,
 
 .error-message {
   color: red;
+}
+
+.page-header {
+  position: fixed;
+  z-index: 2;
+  
+  /* set header at very top of page */
+  top: 0;
 }
