@@ -17,7 +17,7 @@ Secondary Color (light yellow/orange): #e0b354;
   --page-header-color: lightgreen;
   --body-color: #000;
   --anchor-color: #006a5e;
-  --a-visited-color: midnightblue;
+  --a-visited-color: rgb(32, 32, 56);
   --a-active-color: maroon;
   --button-font-color: white;
   --grid-background-color: aliceblue;
@@ -145,6 +145,8 @@ button:focus,
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
+  position: relative; 
+  top: 110px;
 }
 
 .page-footer {
@@ -152,12 +154,15 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
+  position: relative;
+  top: 150px;
+
 }
 
 .page-header {
   display: flex;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   background-color: var(--page-header-color);
   border-bottom: solid 1px blue;
 }
@@ -230,6 +235,8 @@ button:focus,
 }
 
 .about-me {
+  position: relative; 
+  top: 110px;
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
@@ -242,11 +249,16 @@ button:focus,
 
 #about-picture {
   max-width: 70%;
+  position: relative; 
+  top: 150px;
 }
 
 .skills-table {
+  position: relative; 
+  top: 150px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .contact-main {
@@ -318,4 +330,12 @@ button:focus,
 
 .error-message {
   color: red;
+}
+
+.page-header {
+  position: fixed;
+  z-index: 2;
+
+  /* set header at very top of page */
+  top: 0;
 }
