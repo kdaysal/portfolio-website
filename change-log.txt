@@ -1,0 +1,1 @@
+Fixed responsiveness of contact info section for smaller screens - css
