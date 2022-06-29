@@ -1,7 +1,7 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
 
@@ -24,13 +24,14 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #000;
-  text-align: center; /* default all text alignment to center, then change where needed with more specificity */
+  text-align: center;
+  /* default all text alignment to center, then change where needed with more specificity */
 }
 
 /* tells the browser to account for any border and padding in the values you specify for an element's width and height. */
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -65,8 +66,8 @@ a:focus {
   /* Remove underline and italicize font when hovering over a link */
   text-decoration: none;
   -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-property: font-style;
   -o-transition-property: font-style;
   transition-property: font-style;
@@ -82,22 +83,22 @@ a:active {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
-  
+
   /* takes the font from the outer container */
   font-family: inherit;
-  
+
   /* styles the button */
   background-color: #357b70;
   color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
@@ -107,22 +108,22 @@ button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
-  
+
   /* takes the font from the outer container */
   font-family: inherit;
-  
+
   /* styles the button */
   background-color: #357b70;
   color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
@@ -134,7 +135,7 @@ button:focus,
 .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-  
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
@@ -142,6 +143,10 @@ button:focus,
 .button__secondary {
   background-color: #e0b354;
   color: #2b2b2b;
+}
+
+.button__github {
+  background-color: lightgreen;
 }
 
 .navigation-list {
@@ -168,7 +173,7 @@ button:focus,
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
-  position: relative; 
+  position: relative;
   top: 110px;
 }
 
@@ -179,8 +184,8 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   position: relative;
   top: 40px;
@@ -199,14 +204,14 @@ button:focus,
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 65px;
-          flex: 0 1 65px;
+  -ms-flex: 0 1 65px;
+  flex: 0 1 65px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -214,7 +219,9 @@ button:focus,
 .grid__item {
   display: inline-block;
   width: 33%;
-}/* end grid fallback */
+}
+
+/* end grid fallback */
 
 .contact-main {
   max-width: 500px;
@@ -230,10 +237,10 @@ button:focus,
   display: grid;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 auto;
-  
+
   /* max-width: 50px; */
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
@@ -253,7 +260,7 @@ button:focus,
     margin-left: 20px;
     margin-right: 20px;
   }
-  
+
   .grid__item {
     background-color: aliceblue;
     padding: 20px;
@@ -261,7 +268,7 @@ button:focus,
     min-height: auto;
     margin: 0;
   }
-  
+
   /* Note - Can delete the 'last-child' and 'project5' stylings below - or make them look totally different */
   .grid__item:last-child {
     -ms-grid-column: 3;
@@ -270,10 +277,13 @@ button:focus,
     -ms-grid-row-span: 2;
     grid-row: 1 / 3;
   }
-} /* end @supports */
+}
+
+/* end @supports */
 
 /* push header down so it doesn't overlap with profile picture */
 @media all and (max-width: 432px) {
+
   /* move Hello World blurb down below profile pic and center content on screen */
   .profile {
     display: -webkit-box;
@@ -281,25 +291,25 @@ button:focus,
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin-top: 50px;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
   }
-  
+
   /* center profile pic on smaller screens */
   .profile__portrait {
     margin-left: 0;
     margin-right: 0;
   }
-  
+
   .page-footer-home {
     margin-top: 100px;
   }
-  
+
   .contact-info {
     margin-top: 100px;
   }
@@ -315,7 +325,7 @@ button:focus,
   .page-footer-home {
     margin-top: 150px;
   }
-  
+
   .contact-info {
     margin-top: 55px;
   }
@@ -335,7 +345,7 @@ button:focus,
     grid-template-columns: 1fr 1fr;
     margin-top: 60px;
   }
-  
+
   .contact-info {
     margin-top: 55px;
   }
@@ -345,19 +355,19 @@ button:focus,
   .grid {
     grid-gap: 10px;
   }
-  
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-  
+
   h1 {
     font-size: 22px;
   }
 }
 
 .about-me {
-  position: relative; 
+  position: relative;
   top: 110px;
   max-width: 500px;
   margin: 0 auto;
@@ -371,17 +381,17 @@ button:focus,
 
 #about-picture {
   max-width: 70%;
-  position: relative; 
+  position: relative;
   top: 150px;
 }
 
 .skills-table {
-  position: relative; 
+  position: relative;
   top: 150px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 120px;
-  
+
 }
 
 
@@ -393,24 +403,25 @@ button:focus,
   0% {
     fill: #edc655;
   }
-  
+
   50% {
     fill: #fcffad;
   }
-  
+
   100% {
     fill: #f76414;
   }
 }
+
 @keyframes color-change {
   0% {
     fill: #edc655;
   }
-  
+
   50% {
     fill: #fcffad;
   }
-  
+
   100% {
     fill: #f76414;
   }
@@ -418,68 +429,70 @@ button:focus,
 
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move {
+
   /* Moves the cloud from left (origin) to right 200px, no vertical movement */
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
-  
+
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
+
   /* Moves the cloud from left (origin) to right 200px, no vertical movement */
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
-  
+
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
   /* "alternate" will move the cloud back and forth (left-right-left...) */
   -webkit-animation: 30s cloud-move infinite alternate linear;
-          animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
-  
+
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
-  
+
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 .error-message {
@@ -489,7 +502,7 @@ button:focus,
 .page-header {
   position: fixed;
   z-index: 2;
-  
+
   /* set header at very top of page */
   top: 0;
 }
