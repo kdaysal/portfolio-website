@@ -122,6 +122,10 @@ button:focus,
   color: var(--darker-font-color);
 }
 
+.button__github {
+  background-color: lightgreen;
+}
+
 .navigation-list {
   list-style-type: none;
 }
