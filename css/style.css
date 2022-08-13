@@ -63,6 +63,7 @@ h3 {
 
 a {
   color: var(--anchor-color);
+  font-weight: var(--font-weight-bolder);
 }
 
 a:visited {
