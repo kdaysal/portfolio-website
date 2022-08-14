@@ -15,6 +15,7 @@
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
   <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -41,13 +42,17 @@
 
   <!-- Main content -->
   <section>
-    <h1>Work</h1>
+    <br></br>
+    <br></br>
+    <h1 class="animate__animated animate__backInUp">Some of my recent work...</h1>
     <div class="grid">
       <!-- Grid items will live here -->
       <div class="grid__item">
+        <h2>Pokédex App</h2>
+        <hr />
         <img class="screenshot" width="100%" height="auto" src="img/2-pokedex-main.png"
           alt="screenshot of pokedex app main page">
-        <h2>Pokédex app</h2>
+        <hr />
         <p>
           This project is a simple web application that I built using HTML, CSS, and JavaScript in conjunction with
           jQuery and Bootstrap libraries. Data is fetched from an external public API and displayed on the page as
@@ -62,11 +67,30 @@
           <a href="https://kdaysal.github.io/js-pokemon-details/index.html" target="_blank">Click to see the live
             app!</a>
         </button>
+        <br></br>
+        <hr />
+        <p class="technologies-used-header">
+          Technologies used:
+        <ul class="technologies-used-items">
+          <li>JavaScript (ES6), HTML, CSS</li>
+          <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+          <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> (UI frontend toolkit)</li>
+          <li><a href="https://codepen.io/" target="_blank">CodePen</a> (sandbox coding environment)</li>
+          <li><a href="https://replit.com/" target="_blank">Replit</a>(sandbox coding environment)</li>
+          <li><a href="https://caniuse.com/" target="_blank">Can I Use</a> (multi-browsesr compatability)</li>
+          <li><a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=en-US"
+              target="_blank">JSON Viewer</a> (Chrome extension)</li>
+          <li><a href="https://prettier.io/" target="_blank">Prettier</a> (for formatting CSS code)</li>
+          <li><a href="https://eslint.org/" target="_blank">ESLint</a> (for formatting JS code)</li>
+        </ul>
+        </p>
       </div>
 
       <div class="grid__item">
-        <img class="screenshot" width="100%" height="auto" src="img/2-meet-app.png" alt="screenshot of myFlix app">
         <h2>Meet App</h2>
+        <hr />
+        <img class="screenshot" width="100%" height="auto" src="img/2-meet-app.png" alt="screenshot of myFlix app">
+        <hr />
         <p>
           This project is a progressive web application that allows users to find various events by city and view
           details of those events, even when offline! Users can filter events by city, show/hide event details, specify
@@ -81,40 +105,44 @@
           <a href="https://kdaysal.github.io/meet/" target="_blank">Click to see the live
             app!</a>
         </button>
+        <br></br>
+        <hr />
+        <p class="technologies-used-header">
+          Technologies used:
+        <ul class="technologies-used-items">
+          <li><a href="https://reactjs.org/" target="_blank">React</a></li>
+          <li>JavaScript (ES6), HTML, CSS</li>
+          <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+          <li><a href="https://jestjs.io/" target="_blank">Jest</a> (unit testing)</li>
+          <li><a href="https://enzymejs.github.io/enzyme/docs/api/shallow.html" target="_blank">Enzyme</a> (shallow
+            rendering / testing)</li>
+          <li><a href="https://cucumber.io/docs/installation/javascript/" target="_blank">Cucumber</a> (integration
+            testing)</li>
+          <li><a href="https://github.com/puppeteer/puppeteer/blob/v1.15.0/docs/api.md" target="_blank">Puppeteer</a>
+            (end-to-end testing)</li>
+          <li>TDD (Test Driven Development)</li>
+          <li>BDD (Behavior Driven Development)</li>
+          <li><a href="https://developers.google.com/calendar/api" target="_blank">Google Calendar API</a></li>
+          <li><a href="https://developers.google.com/identity/protocols/oauth2" target="_blank">OAuth 2.0</a>
+            (Authentication)</li>
+          <li><a href="https://aws.amazon.com/lambda/" target="_blank">AWS Lambda</a> (serverless framework)</li>
+          <li><a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en"
+              target="_blank">Lighthouse</a> (Chrome) used to analyze/rate the app against PWA criteria</li>
+        </ul>
+        </p>
       </div>
 
       <div class="grid__item">
-        <h2>Another app coming soon!</h2>
-        <p>
-          Description coming soon!
-        </p>
-        <a href="#">See this project on GitHub</a>
-      </div>
-
-      <div class="grid__item">
-        <h2>Another app coming soon!</h2>
-        <p>
-          Description coming soon!
-        </p>
-        <a href="#">See this project on GitHub</a>
-      </div>
-
-      <div class="grid__item" id="project5">
-        <h2>Another app coming soon!</h2>
-        <p>
-          Description coming soon!
-        </p>
-        <a href="#">See this project on GitHub</a>
-      </div>
-
-      <div class="grid__item">
+        <h2>myFlix App (React)</h2>
+        <hr />
         <img class="screenshot" width="100%" height="auto" src="img/1-myflix.png">
-        <h2>myFlix App</h2>
+        <hr />
         <p>
-          myFlix is a single-page web app developed using REACT, ES6 JS, and Parcel / Node.js build tools. This
+          This project is a single-page web app developed using REACT, JavaScript, and Parcel / Node.js build
+          tools. This
           functioning CRUD app uses a REST API database (hosted on Heroku) to register new users and authenticates
-          them via secure password hashing. Users can browse movie titles, explore directors/genres, add movies to their
-          list of favorites and update their profile info.
+          them via secure password hashing. Users can browse movies, explore directors/genres, add movies to their
+          list of favorites and update their profile.
         </p>
         <button class="button__github">
           <a href="https://github.com/kdaysal/myFlix-client" target="_blank">Link to GitHub repository</a>
@@ -125,9 +153,163 @@
           <a href="https://kdaysal-myflixapp.netlify.app" target="_blank">Click to see the live
             app!</a>
         </button>
+        <br></br>
+        <hr />
+        <p class="technologies-used-header">
+          Technologies used:
+        <ul class="technologies-used-items">
+          <li><a href="https://reactjs.org/" target="_blank">React</a></li>
+          <li>JavaScript (ES6), HTML, CSS</li>
+          <li><a href="https://axios-http.com/docs/intro" target="_blank">Axios</a></li>
+          <li>MVC architecture (during development)</li>
+          <li><a href="https://reactjs.org/blog/2014/05/06/flux.html" target="_blank">Flux</a> (final design pattern)
+          </li>
+          <li><a href="https://redux.js.org/" target="_blank">Redux</a> (state container)
+          </li>
+          <li><a href="https://react-redux.js.org/" target="_blank">React Redux</a> (React UI bindings layer for Redux)
+          </li>
+          <li><a href="https://www.npmjs.com/" target="_blank">NPM</a> (Node Package Manager)</li>
+          <li><a href="https://parceljs.org/" target="_blank">Parcel</a>
+            (web app bundler)</li>
+          <li><a href="https://github.com/kdaysal/myFlix-client" target="_blank">Babel-parser</a> (for transpiling)</li>
+          <li><a href="https://developers.google.com/identity/protocols/oauth2" target="_blank">OAuth 2.0</a>
+            (Authentication)</li>
+          <li>HTTP authentication (to login users)</li>
+          <li><a href="https://jwt.io/introduction" target="_blank">JWT</a> (JSON Web Token to authorize users)</li>
+        </ul>
+        </p>
+      </div>
+
+      <div class="grid__item">
+        <h2>Movie API (server-side component for myFlix)</h2>
+        <hr />
+        <img class="screenshot" width="100%" height="auto" src="img/2-users-collection.png"
+          alt="screenshot of movie API users collection">
+        <hr />
+        <p>
+          This repository was used to build the server-side component for my "myFlix" web application. Node.js and
+          Express were used to implement the back-end REST API along with MongoDB / Mongoose for creating the online
+          database to store
+          details about users and movies.
+        </p>
+        <button class="button__github">
+          <a href="https://github.com/kdaysal/movie_api" target="_blank">Link to GitHub repository</a>
+        </button>
+        <br></br>
+        <hr />
+        <p class="technologies-used-header">
+          Technologies used:
+        <ul class="technologies-used-items">
+          <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+          <li>JavaScript (ES6), HTML</li>
+          <li><a href="https://expressjs.com/" target="_blank">Express</a> (web framework for Node.js)</li>
+          <li><a href="https://expressjs.com/en/resources/middleware/morgan.html" target="_blank">Morgan</a> (middleware
+            Node.js
+            module)
+          </li>
+          <li><a href="https://www.postman.com/" target="_blank">Postman</a> (API endpoint testing)
+          </li>
+          <li><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> (used during initial development
+            phase; later transitioned to MongoDB)
+          </li>
+          <li><a href="https://www.mongodb.com/" target="_blank">MongoDB Atlas</a> (online database)</li>
+          <li><a href="https://mongoosejs.com/docs/" target="_blank">Mongoose</a> (used to define db schema)
+            (web app bundler)</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication" target="_blank">HTTP
+              authentication</a></li>
+          <li><a href="https://jwt.io/introduction" target="_blank">JWT</a> (JSON Web Token) authorization</li>
+          <li><a href="https://www.passportjs.org/" target="_blank">Passport</a> (Node.js middleware tool)</li>
+          <li><a href="https://www.heroku.com/" target="_blank">Heroku</a> (for hosting my API)</li>
+        </ul>
+        </p>
+      </div>
+
+      <div class="grid__item">
+        <h2>Chat App</h2>
+        <hr />
+        <img class="screenshot" width="50%" height="auto" src="img/chat-app-1.PNG"
+          alt="screenshot of the chat app's home page">
+        <hr />
+        <p>
+          This project is a Chat app built for mobile devices and developed using React Native and Expo. The app
+          utilizes
+          GiftedChat to provide users with a chat interface as well as options to share images from their phones, and
+          even their geographical location!
+        </p>
+        <button class="button__github">
+          <a href="https://github.com/kdaysal/chat" target="_blank">Link to GitHub repository</a>
+        </button>
         <br>
         <br>
-        <img class="screenshot" width="100%" height="auto" src="img/2-myflix.png">
+        <button class="button__secondary">
+          <a href="https://github.com/kdaysal/chat#readme" target="_blank">View the Readme file to install/run!</a>
+        </button>
+        <br></br>
+        <hr />
+        <p class="technologies-used-header">
+          Technologies used:
+        <ul class="technologies-used-items">
+          <li><a href="https://reactjs.org/" target="_blank">React</a></li>
+          <li><a href="https://reactnative.dev/" target="_blank">React Native</a></li>
+          <li><a href="https://github.com/FaridSafi/react-native-gifted-chat#readme" target="_blank">Gifted Chat</a>
+            (chat UI for React Native)</li>
+          <li>JavaScript (ES6)</li>
+          <li><a href="https://expo.dev/client" target="_blank">Expo Go</a> (to run/test on actual iPhone device)
+          </li>
+          <li><a href="https://docs.expo.dev/workflow/expo-cli/" target="_blank">Expo CLI</a> (command-line interface
+            for Expo tools)
+          </li>
+          <li><a href="https://docs.expo.dev/versions/latest/sdk/imagepicker/" target="_blank">Expo ImagePicker</a>
+            (to access the mobile device's images/videos library)
+          </li>
+        </ul>
+        </p>
+      </div>
+
+      <div class="grid__item">
+        <h2>myFlix - Angular version</h2>
+        <hr />
+        <img class="screenshot" width="100%" height="auto" src="img/1-angular-readme.png"
+          alt="screenshot of the chat app's home page">
+        <hr />
+        <p>
+          The purpose of this project was to use Angular to build out the client-side of my earlier "myFlix" app,
+          based on its existing server-side code (REST API and database) along with angular-cli-generated supporting
+          documentation. Building the user interface following Angular Material Design principles provided me with
+          hands-on experience of using a brand new (to me) framework alonw with a deeper dive into the TypeScript
+          language
+        </p>
+        <button class="button__github">
+          <a href="https://github.com/kdaysal/myFlix-Angular-client" target="_blank">Link to GitHub repository</a>
+        </button>
+        <br>
+        <br>
+        <button class="button__secondary">
+          <a href="https://kdaysal.github.io/myFlix-Angular-client/welcome" target="_blank">Click to see the live
+            app!</a>
+        </button>
+        <br></br>
+        <hr />
+        <p class="technologies-used-header">
+          Technologies used:
+        <ul class="technologies-used-items">
+          <li><a href="https://trello.com/en" target="_blank">Trello</a> (kanban board for working through this project
+            using Agile principles
+            )</li>
+          <li><a href="https://angularjs.org/" target="_blank">AngularJS</a> (framework chosen for this version of the
+            myFlix app)</li>
+          <li><a href="https://nodejs.org/en/" target="_blank">NodeJS</a></li>
+          <li><a href="https://material.angularjs.org/latest/" target="_blank">Angular Material Design</a> (UI
+            components for this AngularJS apps)
+          </li>
+          <li><a href="https://typedoc.org/" target="_blank">TypeDoc</a> (used to convert TypeScript comments in source
+            code into rendered HTML documentation)
+          </li>
+          <li><a href="https://github.com/jsdoc/jsdoc" target="_blank">JSDoc</a> (used as an API documentation generator
+            for JS)
+          </li>
+        </ul>
+        </p>
       </div>
 
     </div>
