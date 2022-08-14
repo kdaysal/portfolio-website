@@ -157,6 +157,10 @@ button:focus,
   border-radius: 50%;
 }
 
+.about-me-portrait {
+  border-radius: 25%;
+}
+
 .profile {
   max-width: 700px;
   margin: 0 auto;
