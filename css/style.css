@@ -85,6 +85,10 @@ a:active {
   color: var(--a-active-color);
 }
 
+.navigation-list__item:hover {
+  background-color: lightgoldenrodyellow;
+}
+
 hr {
   border: 0;
   height: 1px;
@@ -192,6 +196,10 @@ button:focus,
 .grid__item {
   display: inline-block;
   width: 33%;
+}
+
+.grid__item:hover {
+  background-color: lightcoral;
 }
 
 /* end grid fallback */
