@@ -82,6 +82,9 @@ a:active {
 
 .navigation-list__item:hover {
   background-color: lightgoldenrodyellow;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 hr {
@@ -240,6 +243,9 @@ button:focus,
 
 .grid__item:hover {
   background-color: lightcoral;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 /* end grid fallback */
