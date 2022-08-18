@@ -87,6 +87,7 @@ a:active {
 
 .navigation-list__item:hover {
   background-color: lightgoldenrodyellow;
+  transition: 0.2s;
 }
 
 hr {
@@ -204,6 +205,7 @@ button:focus,
 
 .grid__item:hover {
   background-color: lightcoral;
+  transition: 0.3s;
 }
 
 /* end grid fallback */
