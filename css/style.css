@@ -366,10 +366,10 @@ button:focus,
 
 .skills-table {
   position: relative;
-  top: 150px;
+  /* top: 150px; */
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
 
 }
 
