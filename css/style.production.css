@@ -403,7 +403,7 @@ button:focus,
 .about-me {
   position: relative;
   top: 110px;
-  max-width: 500px;
+  max-width: 550px;
   margin: 0 auto;
   text-align: center;
   line-height: 1.8;
@@ -419,12 +419,37 @@ button:focus,
   top: 150px;
 }
 
-.skills-table {
+.tech-stack-section {
   position: relative;
-  top: 150px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 120px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tech-stack-icon-wrapper {
+  /* Use `margin: 0 auto` for centering the tech stack icons without the `max-width: 400px` attribute pushing the icon wrapper off from center */
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.tech-stack-icon {
+  /* background-color: red; */
+  margin: 3px;
+}
+
+.skills-table {
+  position: relative;
+  /* top: 150px; */
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 120px; */
 
 }
 
