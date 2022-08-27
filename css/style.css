@@ -385,6 +385,10 @@ button:focus,
   margin: 3px;
 }
 
+.tech-stack-icon-hyperlink {
+  text-decoration: none;
+}
+
 .skills-table {
   position: relative;
   /* top: 150px; */
