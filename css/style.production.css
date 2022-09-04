@@ -85,6 +85,7 @@ a:active {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  padding: 8px;
 }
 
 hr {
@@ -185,6 +186,10 @@ button:focus,
   border-radius: 50%;
 }
 
+#my-code-call-to-action {
+  margin-top: 30px;
+}
+
 .about-me-portrait {
   border-radius: 25%;
 }
@@ -208,8 +213,9 @@ button:focus,
   flex-direction: column;
   text-align: center;
   position: relative;
-  top: 40px;
+  top: 80px;
   margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .page-header {
@@ -370,6 +376,11 @@ button:focus,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     margin-top: 100px;
+  }
+
+  .cert-image {
+    height: auto;
+    width: 25%;
   }
 }
 
