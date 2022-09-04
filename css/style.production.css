@@ -377,11 +377,6 @@ button:focus,
     grid-template-columns: 1fr;
     margin-top: 100px;
   }
-
-  .cert-image {
-    height: auto;
-    width: 25%;
-  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
