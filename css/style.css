@@ -320,7 +320,7 @@ button:focus,
   }
 
   .cert-image {
-    height: 10%;
+    height: auto;
     width: 10%;
   }
 }
