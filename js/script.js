@@ -29,8 +29,8 @@
       return false;
     }
 
-    if (value.indexOf('@') === -1) {
-      showErrorMessage(emailInput, 'Invalid email format - please keep typing :)');
+    if ((value.indexOf('@') === -1) || (value.indexOf('.') === -1)) {
+      showErrorMessage(emailInput, 'Invalid email format');
       return false;
     }
 
@@ -41,10 +41,12 @@
   function validatePhoneNum() {
     let value = telephoneInput.value;
 
-
-
-
     //add hyphen (-) to format telephone number correctly
+    if (value.length === 0) {
+      showErrorMessage(telephoneInput, null);
+      return true;
+    }
+
     if (value.length === 3) {
       value += '-';
       telephoneInput.value = value;
@@ -58,8 +60,8 @@
       console.log(`telephone value now: ${value}`)
     }
 
-    if (value.length < 12) {
-      showErrorMessage(telephoneInput, 'Telephone number must be at least 10 digits long.');
+    if (value.length !== 12) {
+      showErrorMessage(telephoneInput, 'Telephone number must be 10 digits long.');
       return false;
     }
 
@@ -78,7 +80,7 @@
   form.addEventListener('submit', (e) => {
     e.preventDefault(); // Do not submit to the server
     if (validateForm()) {
-      alert('Success!');
+      alert('Opening email...');
     }
   });
 
@@ -86,3 +88,10 @@
   telephoneInput.addEventListener('input', validatePhoneNum);
 })();
 
+function sendEmailToMe() {
+  console.log(`sending email to me...`);
+  let subject = document.querySelector('#subject');
+  let message = document.querySelector('#message');
+
+  window.location = 'mailto:kdaysal123@gmail.com?subject=' + subject.value + '&body=' + message.value;
+}
