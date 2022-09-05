@@ -218,6 +218,21 @@ button:focus,
   margin-top: 60px;
 }
 
+#contact-footer {
+  top: 20px;
+  margin-top: 10px;
+}
+
+#work-footer {
+  top: 20px;
+  margin-top: 10px;
+}
+
+#about-footer {
+  top: 40px;
+  margin-top: 10px;
+}
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
