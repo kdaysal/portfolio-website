@@ -84,17 +84,12 @@ a:focus {
   transition-duration: 0.3s;
   transition-property: font-style;
   font-style: italic;
+
 }
 
 a:active {
   /* selected link */
   color: var(--a-active-color);
-}
-
-.navigation-list__item:hover {
-  background-color: lightgoldenrodyellow;
-  transition: 0.2s;
-  padding: 8px;
 }
 
 hr {
@@ -151,11 +146,51 @@ button:focus,
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  margin: 5px;
+}
+
+.navigation-list__item {
+  text-decoration: none;
+  /* margin-top: 10px; */
 }
 
 .navigation-list__item--active {
-  text-decoration: none;
+  /* text-decoration: none; */
+  /* font-style: italic; */
+  border: solid 1px blue;
+  border-radius: 20%;
+  padding: 6px;
+  background-color: lightyellow;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.navigation-list__item:hover {
+  /* transition: 0.2s; */
+  font-style: normal;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .profile__portrait {
@@ -217,6 +252,9 @@ button:focus,
 
 .page-header__item {
   flex: 0 1 65px;
+  /* for testing only */
+  /* background-color: orange; */
+
 }
 
 .page-header__item:last-child {
@@ -320,6 +358,18 @@ button:focus,
 
   .contact-info {
     margin-top: 100px;
+  }
+}
+
+/* for testing only */
+/* purpose was to fix the spacing of the navlinks on <441px screens (iPhone 12 Pro) */
+
+@media all and (min-width: 380px) and (max-width: 391px) {
+
+  /* this removes the flex property for this narrow range of screen widths where keeping all of the links in one row looks better than having just the Content link wrap to the next line */
+  .page-header__item {
+    flex: none;
+    text-align: left;
   }
 }
 
