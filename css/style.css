@@ -361,22 +361,23 @@ button:focus,
   }
 }
 
+/* for testing only */
+/* purpose was to fix the spacing of the navlinks on <441px screens (iPhone 12 Pro) */
+
+@media all and (min-width: 380px) and (max-width: 391px) {
+
+  /* this removes the flex property for this narrow range of screen widths where keeping all of the links in one row looks better than having just the Content link wrap to the next line */
+  .page-header__item {
+    flex: none;
+    text-align: left;
+  }
+}
+
 @media all and (max-width: 432px) {
   .contact-info {
     margin-top: 120px;
   }
 }
-
-/* for testing only */
-/* purpose was to fix the spacing of the navlinks on <441px screens (iPhone 12 Pro) */
-/* @media all and (max-width: 440px) {
-
-  .navigation-links {
-    background-color: red;
-  }
-
-
-} */
 
 @media all and (min-width: 432px) and (max-width: 575px) {
   .page-footer-home {
