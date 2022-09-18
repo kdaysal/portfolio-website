@@ -80,7 +80,7 @@
   form.addEventListener('submit', (e) => {
     e.preventDefault(); // Do not submit to the server
     if (validateForm()) {
-      alert('Opening email...');
+      alert('Opening email client - you may close this window now');
     }
   });
 
