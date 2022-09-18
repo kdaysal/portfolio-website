@@ -467,15 +467,15 @@ button:focus,
 }
 
 .skills-table {
-  /* background-color: red; */
   position: relative;
-  /* top: 150px; */
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 120px; */
 }
 
-
+#certs-table {
+  /* border-spacing: <horizontal value> <vertical value>; */
+  border-spacing: 0 2em;
+}
 
 /* ANIMATION!! */
 
