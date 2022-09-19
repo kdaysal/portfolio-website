@@ -441,6 +441,15 @@ button:focus,
   }
 }
 
+@media all and (min-width: 380px) and (max-width: 431px) {
+
+  .contact-info {
+    margin-top: 60px;
+  }
+}
+
+
+
 @media all and (min-width: 432px) and (max-width: 575px) {
   .page-footer-home {
     margin-top: 150px;
