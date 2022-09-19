@@ -369,6 +369,19 @@ button:focus,
   }
 }
 
+/* ALL @media queries below */
+@media all and (min-width: 433px) and (max-width: 529px) {
+
+  /* this forces the "Check out some of my code" link to wrap to the next line instead of splitting itself up on certain smaller screen sizes */
+  #my-code-call-to-action {
+    display: inline-block;
+  }
+
+  .call-to-action-p {
+    text-align: center;
+  }
+}
+
 /* for testing only */
 /* purpose was to fix the spacing of the navlinks on <441px screens (iPhone 12 Pro) */
 
