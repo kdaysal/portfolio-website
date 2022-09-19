@@ -329,7 +329,7 @@ button:focus,
     display: grid;
     /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 30px;
     /* margin: 0; */
     margin-top: 40px;
     margin-left: 20px;
@@ -342,6 +342,7 @@ button:focus,
     width: auto;
     min-height: auto;
     margin: 0;
+
   }
 
   /* Note - Can delete the 'last-child' and 'project5' stylings below - or make them look totally different */
@@ -396,6 +397,25 @@ button:focus,
 /* for testing only */
 /* purpose was to fix the spacing of the navlinks on <441px screens (iPhone 12 Pro) */
 
+@media all and (max-width: 380px) {
+  #recent-work-title {
+    margin-top: 50px;
+  }
+
+  .grid__item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (min-width: 380px) and (max-width: 499px) {
+
+  .grid__item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 @media all and (min-width: 380px) and (max-width: 391px) {
 
   /* this removes the flex property for this narrow range of screen widths where keeping all of the links in one row looks better than having just the Content link wrap to the next line */
@@ -424,7 +444,7 @@ button:focus,
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 
@@ -441,7 +461,7 @@ button:focus,
 
 @media all and (max-width: 750px) {
   .grid {
-    grid-gap: 10px;
+    grid-gap: 20px;
   }
 
   .grid__item:last-child {
