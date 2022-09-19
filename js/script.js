@@ -2,6 +2,13 @@
   let form = document.querySelector('.contact-form');
   let emailInput = document.querySelector('#contact-email');
   let telephoneInput = document.querySelector('#telephone');
+  let clearTelephoneInput = document.querySelector('#btn-clear');
+
+  clearTelephoneInput.addEventListener('click', () => {
+    console.log(`clear button clicked`)
+    telephoneInput.value = '';
+    showErrorMessage(telephoneInput, null);
+  })
 
   telephoneInput.addEventListener('keydown', (event) => {
     console.log(event); // all event related info
