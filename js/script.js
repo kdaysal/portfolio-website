@@ -3,6 +3,43 @@
   let emailInput = document.querySelector('#contact-email');
   let telephoneInput = document.querySelector('#telephone');
 
+  telephoneInput.addEventListener('keydown', (event) => {
+    console.log(event); // all event related info
+    console.log(event.type);
+    console.log(event.key);
+    console.log(event.code);
+
+    //get the cursor position in the textbox (I'm only concerned with startPos for the purpose of handling cases where the user hits the Backspace key)
+    let startPos = telephoneInput.selectionStart;
+    let endPos = telephoneInput.selectionEnd;
+
+    if (event.key === "ArrowRight") {
+      console.log(`arrow right was pressed`);
+      startPos++;
+      endPos++;
+    }
+
+    if (event.key === "ArrowLeft") {
+      console.log(`arrow right was pressed`);
+      startPos--;
+      endPos--;
+    }
+    console.log(`startPos: ${startPos}, endPos: ${endPos}`);
+
+
+    //case where Backspace is pressed when cursor is to the right of a hyphen (-)
+    if (event.key === "Backspace") {
+      if (startPos === 4) {
+        telephoneInput.value = telephoneInput.value.slice(0, 3);
+      }
+
+      if (startPos === 8) {
+        telephoneInput.value = telephoneInput.value.slice(0, 7);
+      }
+    }//end case for Backspace
+
+  });
+
   function showErrorMessage(input, message) {
     let container = input.parentElement; // The .input-wrapper
 
@@ -38,7 +75,7 @@
     return true;
   }
 
-  function validatePhoneNum() {
+  function validatePhoneNum(event) {
     let value = telephoneInput.value;
 
     //add hyphen (-) to format telephone number correctly
@@ -64,7 +101,6 @@
       showErrorMessage(telephoneInput, 'Telephone number must be 10 digits long.');
       return false;
     }
-
 
     //if no validation flags, then remove the error message
     showErrorMessage(telephoneInput, null);
